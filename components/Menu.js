@@ -18,7 +18,7 @@ const Menu = (props) => {
     <div>
       <Navbar color="primary" dark expand="md">
         <Container>
-          <NavbarBrand href="/">AFFATECNOLOGIA</NavbarBrand>
+          <NavbarBrand href="/">Logomarca</NavbarBrand>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="me-auto" navbar>
@@ -26,7 +26,7 @@ const Menu = (props) => {
                 <NavLink href="/">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/budget">Orçamento</NavLink>
+                <NavLink href="/budget">Contato</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

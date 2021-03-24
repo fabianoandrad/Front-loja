@@ -5,18 +5,20 @@ import Head from "next/head";
 import {
   Jumbotron,
   Container,
-  Card,
   Button,
+  Card,
   CardImg,
   CardTitle,
   CardText,
   CardColumns,
   CardSubtitle,
   CardBody,
+  Media,
 } from "reactstrap";
 
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
+import Slider from "../components/Slides";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -39,8 +41,9 @@ function Home() {
       <Jumbotron fluid className="descr-top">
         <style>
           {`.descr-top{
-            background-color: #000000;
+            background-color: #ffffff;
             color: #00a1fc;
+            margin-top: 6rem;
             margin-bottom: 0rem;
             padding-top: 0rem;
           }.descr-text{
@@ -51,26 +54,19 @@ function Home() {
         <Container className="text-center">
           {/* text-center já do proprio reactstrap */}
           <div>
-            <CardImg
-              top
-              width="100%"
-              src="assets/logo.png"
-              alt="Logo AFFATECNOLOGIA"
-            />
+            <Slider />
           </div>
 
-          <h1 className="display-4 descr-text">
-            Temos a solução que sua empresa precisa!
-          </h1>
-          <p className="lead">Faça seu orçamento</p>
-          <p className="lead">
+          <h1 className="display-4 descr-text">Sua melhor opção esta aqui!</h1>
+          {/* <p className="lead">Faça seu orçamento</p>
+           <p className="lead">
             <a
               href="/orcamento"
               className="btn btn-outline-primary btn-lg mt-4"
             >
               Orçamento
             </a>
-          </p>
+          </p> */}
         </Container>
       </Jumbotron>
 
@@ -88,7 +84,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -108,7 +104,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -128,7 +124,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -148,7 +144,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -168,7 +164,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -188,7 +184,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -208,7 +204,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -228,7 +224,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -248,7 +244,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -268,7 +264,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -288,7 +284,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -308,7 +304,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -328,7 +324,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -348,7 +344,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -368,7 +364,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -388,7 +384,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -408,7 +404,7 @@ function Home() {
             <CardImg
               top
               width="100%"
-              src="/assets/318x180.svg"
+              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
               alt="Card image cap"
             />
             <CardBody>
@@ -424,7 +420,6 @@ function Home() {
               <Button>Button</Button>
             </CardBody>
           </Card>
-         
         </CardColumns>
       </Container>
 

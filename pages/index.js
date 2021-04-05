@@ -13,7 +13,6 @@ import {
   CardColumns,
   CardSubtitle,
   CardBody,
-  Media,
 } from "reactstrap";
 
 import Menu from "../components/Menu";
@@ -25,8 +24,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fas);
 
-// function Home({ data }) { // em {data} esta o json vindo api
-function Home() {
+
+
+function Home({ data }) {
+   const products = data.product;
+ 
+   //console.log(products)
+   
   return (
     <div>
       <Head>
@@ -80,346 +84,28 @@ function Home() {
         </style>
 
         <CardColumns>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
-              alt="Card image cap"
-            />
-            <CardBody>
-              <CardTitle tag="h5">Card title</CardTitle>
-              <CardSubtitle tag="h6" className="mb-2 text-muted">
-                Card subtitle
-              </CardSubtitle>
-              <CardText>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </CardText>
-              <Button>Button</Button>
-            </CardBody>
-          </Card>
+        
+          {products.map((prod) => {
+            return (
+              <Card key={prod._id}>
+                <CardImg
+                  top
+                  width="100%"
+                  src="https://www.setead.org.br/wp-content/uploads/2020/03/loja-virtual.jpg"
+                  alt="Card image cap"
+                />
+                <CardBody>
+                  <CardTitle tag="h5">{prod.name}</CardTitle>
+                  <CardSubtitle tag="h6" className="mb-2 text-muted">
+                    R$ {prod.price}
+                  </CardSubtitle>
+                  <CardText>{prod.description}</CardText>
+                  <Button>Comprar</Button>
+                  <p>{prod._id}</p>
+                </CardBody>
+              </Card>
+            );
+          })}
         </CardColumns>
       </Container>
 
@@ -494,11 +180,11 @@ function Home() {
   );
 }
 
-// export async function getServerSideProps() {
-//   const response = await fetch("http://localhost:8080/home"); //obtem de get /home da api
-//   const data = await response.json();
+export async function getServerSideProps() {
+  const response = await fetch("http://localhost:8080/home"); //obtem de get /home da api
+  const data = await response.json();
 
-//   return { props: { data } }
-// }
+  return { props: { data } };
+}
 
 export default Home;
